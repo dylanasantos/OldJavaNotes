@@ -1,0 +1,151 @@
+The 4 key values that make an object oriented programming language:
+-Inheritance (refer to superAndSubClasses)
+-Encapsulation
+-Abstraction
+-Polymorphism
+
+Encapsulation and Abstraction:
+//Encapsulation and Abstraction are two of the four key values that make an object oriented programming language like java unique
+
+Encapsulation:
+//Putting something away, like a class
+
+Abstraction
+//Pulling something out, like instantiating a class
+
+Polymorphism:
+//Definition: One that can take multiple forms
+
+//Polymorphism simply means that we are able to slightly morph our code, more or less think about classes and subclasses,
+//Subclasses can override methods from a Parent class yet it's still similar to the original code
+
+//Another example is overloading, where we have two methods that have the same name, but different parameters
+
+
+
+Overloading vs Overriding:
+
+Overloading:
+//Multiple methods with the same name, but different parameter values
+
+Overriding:
+//Multiple methods with the same name and parameter values, but different classes
+
+
+Some Data Types To Remember:
+
+byte: -128 to 127
+//Originally used for concerns on processing power, however not as important now
+
+short: -32,768 to 32,767
+
+int: -2,147,483,648 to 2,147,483,647
+
+long: -9,223,036,854,775,808 to 9,223,372,036,854,775,807
+
+
+
+How Static Works:
+//Static refrences the class as a whole when being used, instead of an individual object
+
+//For example: A static variable would be a variable for the class
+
+//A static method is one that can be called without creating an object
+//This would be called by using the class as such:
+className.staticObject();
+
+//Static variables are the only ones able to access static variables, but cannot access non-static variables
+//Same applies to methods
+
+
+
+Do while loops:
+
+example:
+int x = 7;
+do { //Runs this code
+    x *= 2;
+} while (x < 28); //Checks if it's true or false, if still true it will re-run the do
+
+//The difference between a do while and a regular while is that the do will run atleast once, since it does not check till the code
+//is run
+
+Infinite while loop:
+
+while(true){
+    //code
+}
+//The Reason this is infinite is because it's say while true is true, which it always will be
+//If you wanted to exit the infinite loop, just use break;
+
+//An infinite loop can also be done with variables:
+example:
+
+boolean number = false;
+while(!number){ //Will run for as long as it is NOT number (false)
+    //code
+}
+
+//While loops are always marked as true
+
+
+
+How to record a time frame:
+
+long startTime = System.currentTimeMillis();
+long endTime = System.currentTimeMillis();
+long totalTimme = endTime - startTime;
+
+
+
+Packages:
+
+/*
+Packages are a way we keep items oragnized in Java. While it's not as useful for smaller programs with only a few classes,
+when you get to bigger programs with hundreds of classes the use of a package is vital.
+
+(Examples in binarySearching and sorting class)
+In order to create a package, simply write at the top package packageName; and VS Code will automatically create that package
+and put the class in it. To add others simply drag and drop them inside
+
+However it will no longer be accessed by default under the src package, meaning you have to import it like a regular import.
+
+There is also package protected methods, this is a method not defined as private nor public. but left as: */
+
+void methodExample(){
+    //code
+}
+
+//This method can only be accessed by those in the same package, refer to sorting.java for more examples
+
+Applying Final:
+/*
+ * Final can be used for various reasons:
+ * -Preventing child classes (applied to classes)
+ * -Preventing modification of value (applied to variables)
+ * -Preventing modification of the method from a child class (applied to methods)
+ * ^^^
+ * Final variables are not written in standard camelCasing, rather all caps and underscores (i.e VARIABLE_NAME)
+ */
+
+ Important Java Methods:
+
+ Integer.parseInt("Number"); //Turns a String into a number (Will error out if impossible)
+
+ Access modifiers:
+ //No declaration: only accessible to those inside it's package
+ //public: accessible to all inside the java project folder
+ //protected: accessible to all inside the java project folder IF it is a subclass of that class
+ //private: onnly accessible to the class
+
+ Every wrapper Class:
+    (Wrapper classes are the non-primitive form of our data types)
+
+byte = Byte
+short = Short
+int = Integer
+long = Long 
+float = Float 
+double = Double 
+boolean = Boolean 
+char = Character
